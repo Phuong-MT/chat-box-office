@@ -2,7 +2,6 @@ import BaseLayout from "@/layouts";
 import { Suspense, lazy } from "react";
 import { Route, Routes as RouterRoutes } from "react-router-dom";
 
-
 function Pages() {
     return (
         <RouterRoutes>

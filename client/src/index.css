@@ -1,0 +1,257 @@
+:root {
+    --main-color: #597ef7;
+    --widthScrollThumb: 5px;
+    --background-scrollbar-thumb: rgba(0, 0, 0, 0.2);
+    --scrollbar-track-color: rgba(0, 0, 0, 0.1);
+}
+
+*,
+*::before,
+*::after {
+    font-family: "Nunito";
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+    width: var(--widthScrollThumb) !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--background-scrollbar-thumb);
+    border-radius: 10px;
+}
+:root {
+    --widthRightContent: 340px;
+    /* --widthRightContent: 230px; */
+    --widthLogo: 40px;
+    --heightLogo: 72px;
+    --widthScrollThumb: 7px;
+    --main-color: #597ef7;
+    --main-color-rgb: 89, 126, 247;
+    --color: 89, 126, 247;
+    --durationAni: 2s;
+    --backgroundColorToolTip: rgba(97, 97, 97, 0.92);
+    --colorToolTip: #fff;
+    --heightHeader: 53px;
+    --widthLeft: 52px;
+    --widthLeftFull: 190px;
+    --background-scrollbar-thumb: rgba(0, 0, 0, 0.2);
+    --linearGradient: linear-gradient(90deg, #3eb7f6, #597ef7);
+    --heightHeaderV2: 52px;
+    --height_hd_rp: 46px;
+    --color-correct: 37, 211, 102;
+    --color-in-correct: 239, 68, 68;
+    --color-active: #2f54eb;
+    --color-in-active: 33, 33, 33;
+    --color-hover: #85a5ff;
+}
+
+html,
+body {
+    padding: 0; /* Add padding right when open popup to prevent flick header */
+    margin: 0;
+    font-family: "Nunito" !important;
+}
+
+a {
+    color: inherit;
+    /* text-decoration: none; */
+}
+
+*:not(.app_tool *):not(* .canvas-text):not(* .word-bank-item):not(
+        .sentence *
+    ):not(.katex):not(.katex *):not(.offline-game-layout *):not(
+        .custom-font-layout *
+    ):not(.landing-cincodemayo *):not(.landing-memorial-day *):not(
+        .landing-halloween *
+    ) {
+    font-family: "Nunito" !important;
+}
+
+/* ::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    padding: 0 3px;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    background: #909090;
+    background-clip: padding-box;
+    border-radius: 50px;
+} */
+
+/* *::-webkit-scrollbar {
+    height: 3px;
+    width: var(--widthScrollThumb) !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--background-scrollbar-thumb);
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track-color);
+} */
+.MuiPaper-root .tracking-dont-delete *,
+.tracking-dont-delete * {
+    pointer-events: none;
+}
+.disable-scroll {
+    overflow: hidden;
+}
+.aspect-1p7 {
+    aspect-ratio: 16/9;
+}
+.aspect-1 {
+    aspect-ratio: 1;
+}
+
+.aspect-2p6 {
+    aspect-ratio: 820 / 312;
+}
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-slider .slick-track {
+    position: relative;
+    display: block;
+    left: 0;
+    top: 0;
+}
+.slick-slider .slick-slide {
+    display: block;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slider .slick-list {
+    overflow: hidden;
+}
+.slick-slider .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 5px;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-slider .slick-dots {
+    display: flex !important;
+    justify-content: center;
+}
+.slick-slider .slick-dots li {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-color: #212121;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    opacity: 0.3;
+    margin: 0 8px !important;
+}
+.slick-slider .slick-dots .slick-active {
+    opacity: 1;
+}
+.slick-slider .slick-dots li,
+.slick-slider .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+.slick-slider .slick-next,
+.slick-slider .slick-prev {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+}
+.slick-slider .slick-dots {
+    margin-left: 0;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-slider .slick-prev {
+    left: -25px;
+}
+.slick-slider .slick-next {
+    right: -25px;
+}
+.slick-slider .slick-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    position: none;
+}
+
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media screen and (min-width: 769px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.loading-component .circular-progress-svg .circular-progress-circle {
+    stroke: url(#linearColors) !important;
+}
+
+@media screen and (max-width: 1210px) and (orientation: portrait) {
+    :root {
+        --heightHeader: 48px;
+    }
+}

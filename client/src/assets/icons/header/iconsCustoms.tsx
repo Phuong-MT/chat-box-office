@@ -5,7 +5,6 @@ type CustomIconComponentProps = GetProps<typeof Icon>;
 
 const VideoIconsSvg = () => (
     <svg viewBox="0 0 24 24" width="100%" height="100%" fill="currentColor">
-        <title>Video</title>
         <path
             d="M14.573 2H9.427c-1.824 0-3.293 0-4.45.155-1.2.162-2.21.507-3.013 1.31C1.162 
         4.266.817 5.277.655 6.477.5 7.634.5 9.103.5 10.927v.146c0 1.824 0 3.293.155 4.45.162 
@@ -22,7 +21,6 @@ const VideoIcons = (props: Partial<CustomIconComponentProps>) => (
 
 const HomeIconsSvg = () => (
     <svg viewBox="0 0 24 24" width="100%" height="100%" fill="currentColor">
-        <title>Home</title>
         <path
             d="M8.99 23H7.93c-1.354 0-2.471 0-3.355-.119-.928-.125-1.747-.396-2.403-1.053-.656-.656-.928-1.475-1.053-2.403C1
         18.541 1 17.425 1 16.07v-4.3c0-1.738-.002-2.947.528-4.006.53-1.06 1.497-1.784 2.888-2.826L6.65 3.263c1.114-.835 2.02-1.515 2.815-1.977C10.294.803
@@ -89,4 +87,87 @@ const GameIcons = (props: Partial<CustomIconComponentProps>) => (
     <Icon component={GameIconsSvg} {...props} />
 );
 
-export { VideoIcons, HomeIcons, MarkIcons, GroupIcons, GameIcons };
+const LogoIconsSvg = () => (
+    <svg viewBox="0 0 36 36" width="100%" height="100%" fill="currentColor">
+        <path d="M20.181 35.87C29.094 34.791 36 27.202 36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.442 5.811 15.526 13.652 17.471L14 34h5.5l.681 1.87Z" />
+        <path
+            fill="#ffffff"
+            d="M13.651 35.471v-11.97H9.936V18h3.715v-2.37c0-6.127 2.772-8.964 8.784-8.964 1.138 0 3.103.223 3.91.446v4.983c-.425-.043-1.167-.065-2.081-.065-2.952 0-4.09 1.116-4.09 4.025V18h5.883l-1.008 5.5h-4.867v12.37a18.183 18.183 0 0 1-6.53-.399Z"
+        />
+    </svg>
+);
+
+const LogoIcons = (props: Partial<CustomIconComponentProps>) => (
+    <Icon component={LogoIconsSvg} {...props} />
+);
+
+const MenuIconsSvg = () => (
+    <svg viewBox="0 0 24 24" width="100%" height="100%" fill="currentColor">
+        <path d="M18.5 1A1.5 1.5 0 0 0 17 2.5v3A1.5 1.5 0 0 0 18.5 7h3A1.5 1.5 0 0 0 23 5.5v-3A1.5 1.5 0 0 0 21.5 1h-3zm0 8a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 21.5 9h-3zm-16 8A1.5 1.5 0 0 0 1 18.5v3A1.5 1.5 0 0 0 2.5 23h3A1.5 1.5 0 0 0 7 21.5v-3A1.5 1.5 0 0 0 5.5 17h-3zm8 0A1.5 1.5 0 0 0 9 18.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3a1.5 1.5 0 0 0-1.5-1.5h-3zm8 0a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3a1.5 1.5 0 0 0-1.5-1.5h-3zm-16-8A1.5 1.5 0 0 0 1 10.5v3A1.5 1.5 0 0 0 2.5 15h3A1.5 1.5 0 0 0 7 13.5v-3A1.5 1.5 0 0 0 5.5 9h-3zm0-8A1.5 1.5 0 0 0 1 2.5v3A1.5 1.5 0 0 0 2.5 7h3A1.5 1.5 0 0 0 7 5.5v-3A1.5 1.5 0 0 0 5.5 1h-3zm8 0A1.5 1.5 0 0 0 9 2.5v3A1.5 1.5 0 0 0 10.5 7h3A1.5 1.5 0 0 0 15 5.5v-3A1.5 1.5 0 0 0 13.5 1h-3zm0 8A1.5 1.5 0 0 0 9 10.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 13.5 9h-3z" />
+    </svg>
+);
+
+const MenuIcons = (props: Partial<CustomIconComponentProps>) => (
+    <Icon component={MenuIconsSvg} {...props} />
+);
+
+const ChatMessegerSvg = () => (
+    <svg viewBox="0 0 12 12" width="100%" height="100%" fill="currentColor">
+        <path
+            d="m106.868 921.248-1.892 2.925a.32.32 0 0 1-.443.094l-1.753-1.134a.2.2 0 0 0-.222.003l-1.976 1.363c-.288.199-.64-.143-.45-.437l1.892-2.925a.32.32 0 0 1 .443-.095l1.753 1.134a.2.2 0 0 0 .222-.003l1.976-1.363c.288-.198.64.144.45.438m-3.368-4.251c-3.323 0-5.83 2.432-5.83 5.658 0 1.642.652 3.128 1.834 4.186a.331.331 0 0 1 .111.234l.03 1.01a.583.583 0 0 0 .82.519l1.13-.5a.32.32 0 0 1 .22-.015c.541.148 1.108.223 1.685.223 3.323 0 5.83-2.432 5.83-5.657 0-3.226-2.507-5.658-5.83-5.658"
+            transform="translate(-450 -1073.5) translate(352.5 156.845)"
+        />
+    </svg>
+);
+
+const ChatMesseger = (props: Partial<CustomIconComponentProps>) => (
+    <Icon component={ChatMessegerSvg} {...props} />
+);
+
+const NotificateIconsSvg = () => (
+    <svg viewBox="0 0 24 24" width="100%" height="100%" fill="currentColor">
+        <path d="M3 9.5a9 9 0 1 1 18 0v2.927c0 1.69.475 3.345 1.37 4.778a1.5 1.5 0 0 1-1.272 2.295h-4.625a4.5 4.5 0 0 1-8.946 0H2.902a1.5 1.5 0 0 1-1.272-2.295A9.01 9.01 0 0 0 3 12.43V9.5zm6.55 10a2.5 2.5 0 0 0 4.9 0h-4.9z" />
+    </svg>
+);
+
+const NotificateIcons = (props: Partial<CustomIconComponentProps>) => (
+    <Icon component={NotificateIconsSvg} {...props} />
+);
+
+const SreachIconsSvg = () => (
+    <svg viewBox="0 0 16 16" width="100%" height="100%" fill="currentColor">
+        <g fillRule="evenodd" transform="translate(-448 -544)">
+            <g fillRule="nonzero">
+                <path
+                    transform="translate(448 544)"
+                    d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                />
+                <path
+                    transform="translate(448 544)"
+                    d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                />
+                <path
+                    transform="translate(448 544)"
+                    d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                />
+            </g>
+        </g>
+    </svg>
+);
+
+const SreachIcons = (props: Partial<CustomIconComponentProps>) => (
+    <Icon component={SreachIconsSvg} {...props} />
+);
+
+export {
+    VideoIcons,
+    HomeIcons,
+    MarkIcons,
+    GroupIcons,
+    GameIcons,
+    LogoIcons,
+    MenuIcons,
+    ChatMesseger,
+    NotificateIcons,
+    SreachIcons,
+};

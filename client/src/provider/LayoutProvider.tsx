@@ -24,7 +24,9 @@ const LayoutProvider: FC<{ children: ReactNode }> = ({ children }) => {
 const useLayoutContext = (): ILayoutContext => {
     const context = useContext(LayoutContext);
     if (!context) {
-        throw new Error("useLayoutContext must be used within a LayoutProvider");
+        throw new Error(
+            "useLayoutContext must be used within a LayoutProvider"
+        );
     }
     return context;
 };
